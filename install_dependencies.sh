@@ -13,7 +13,7 @@ if [ -z "$VIRTUAL_ENV" ]; then
     . ./venv/bin/activate
 fi
 
-pip install -rU requirements.txt
+pip install --upgrade -r requirements.txt
 pip install -e .
 pip install uwsgi
 pip install --upgrade ete3 numpy
