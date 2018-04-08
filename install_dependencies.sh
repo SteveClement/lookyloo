@@ -3,7 +3,7 @@
 set -x
 set -e
 
-sudo apt-get install python3-virtualenv virtualenv screen unzip docker.io curl net-tools gcc git make sudo vim zip python3-dev -y
+sudo apt-get install python3-virtualenv virtualenv screen unzip docker.io curl net-tools gcc git make sudo vim zip python3-dev libdpkg-perl -y
 
 sudo docker pull scrapinghub/splash
 sudo docker run -d -p 8050:8050 -p 5023:5023 scrapinghub/splash --disable-ui --disable-lua
